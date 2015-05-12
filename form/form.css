@@ -1,0 +1,36 @@
+body {
+  font-size: 62.5%;
+  background-color: RGBA(91, 163, 214, 1);
+  color: white;
+}
+.column-left {
+  float: left;
+  width: 33%;
+  margin: 0 auto;
+}
+
+
+.column-right {
+  float: right;
+  width: 33%;
+  margin: 0 auto;
+}
+
+.column-center {
+  display:inline-block;
+  width: 33%;
+  margin: 0 auto;
+}
+
+input,
+textarea,
+select {
+  background-color: RGBA(91, 163, 214, 1);
+  color: white;
+  border: 3px solid white;
+  width: 80%;
+}
+
+h1 {
+  text-transform: uppercase;
+}
