@@ -2,10 +2,13 @@ body {
   font-size: 62.5%;
 }
 
+img {
+  width: 99%;
+}
+
 .content {
-  max-width: 1423px;
-  height: 500px;
-  margin: 0 75px;
+  max-width: 99%;
+  margin: 0 auto;
 }
 
 .sashimi,
@@ -13,9 +16,10 @@ body {
 .roe  {
   display: inline-block;
   color: RGBA(89, 164, 211, 1);
-  width: 28%;
+  width: 31%;
   font-size: 1.5em;
-  margin: 72px 25px;
+  margin: 1%;
+  vertical-align: top;
 
 }
 
@@ -24,7 +28,9 @@ body {
 @media (max-width: 840px) and (min-width: 501px){
 
   .content {
-    background-color: red;
+    max-width: 99%;
+    margin:1%;
+
   }
 
   .sashimi,
@@ -33,14 +39,46 @@ body {
     width: auto;
     height: auto;
     display: inline-block;
-    vertical-align: top;
+    vertical-align: middle;
   }
 
   img {
-    float:left;
+    display: inline-block;
+    width: 49%;
+    vertical-align: middle;
   }
 
-  h1, p {
-    float: right;
+  .text {
+    display: inline-block;
+    width: 49%;
+    vertical-align: middle;
   }
+}
+
+/* Mobile */
+
+@media (max-width: 500px) and (min-width: 0px){
+
+  .content {
+    max-width: 99%;
+    margin:1%;
+
+  }
+
+  .sashimi,
+  .noodles,
+  .roe {
+    width: auto;
+    height: auto;
+    display: block;
+    text-align: center;
+    vertical-align: middle;
+    margin: 2%;
+  }
+
+  img {
+    width: auto;
+    height: auto;
+  }
+
 }
