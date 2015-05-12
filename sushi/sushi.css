@@ -1,0 +1,46 @@
+body {
+  font-size: 62.5%;
+}
+
+.content {
+  max-width: 1423px;
+  height: 500px;
+  margin: 0 75px;
+}
+
+.sashimi,
+.noodles,
+.roe  {
+  display: inline-block;
+  color: RGBA(89, 164, 211, 1);
+  width: 28%;
+  font-size: 1.5em;
+  margin: 72px 25px;
+
+}
+
+/* Tablet */
+
+@media (max-width: 840px) and (min-width: 501px){
+
+  .content {
+    background-color: red;
+  }
+
+  .sashimi,
+  .noodles,
+  .roe {
+    width: auto;
+    height: auto;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  img {
+    float:left;
+  }
+
+  h1, p {
+    float: right;
+  }
+}
